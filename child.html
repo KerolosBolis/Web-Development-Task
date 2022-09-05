@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Untitled Document</title>
+    <script src="script2.js"></script>
+      <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div id="date" class="date1"></div>
+    <script>
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        document.getElementById("date").innerHTML = "Date: " +  day +"/"+month+ "/" + year;
+    </script>
+    <div id="Demo">
+        <h2 id="header2">TO DO LIST</h2>
+        <label for="taskname"></label><br>
+        <input type="text" id="taskname" name="name"><input type="Button" value="Add a task" onclick="addNewTask()" class="addBtn"><button id="cleartasks" onclick=clearall() class="clcBtn">Clear All Tasks</button><br><br>
+    </div>
+    <ol id="listedinput">
+
+    </ol>
+</body></html>
